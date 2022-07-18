@@ -1,0 +1,54 @@
+.navigation__container {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(253, 203, 110,.2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 15px 3px 15px;
+  z-index: 3;
+
+  .navigations {
+    position: relative;
+    height: 55px;
+    width: 330px;
+
+    .items {
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: flex-end;
+      gap: 18px;
+
+      button {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        outline: none;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        gap: 2px;
+        font-weight: 600;
+
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+
+        img {
+          width: 70px;
+          transform: rotate(7deg);
+          transition: .2s all ease-in-out;
+        }
+      }
+    }
+  }
+}

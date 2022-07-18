@@ -1,0 +1,20 @@
+.topbar__container{
+    background: #0984e3;
+    padding: 10px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+
+    span{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        i{
+            font-size: 18px;
+        }
+    }
+}
