@@ -2,9 +2,9 @@ import React from "react";
 import "./styles/style.css";
 import Logo from "../../assets/KKhane.png";
 import { Button } from "@mui/material";
-import {Link} from 'react-router-dom'
-import MapIcon from '../../assets/map.png'
-import UserIcon from '../../assets/user.png'
+import { Link } from "react-router-dom";
+import MapIcon from "../../assets/map.png";
+import UserIcon from "../../assets/user.png";
 
 export default function Navbar() {
   const [language, setLanguage] = React.useState("eng");
@@ -15,18 +15,19 @@ export default function Navbar() {
 
   return (
     <div className="navbar__container">
-      <Link to="/">
-      <img src={Logo} alt="K Khane" />
-      </Link>
-
-      <div className="navbar__menu">
+      <div className="leftContainer">
+        <Link to="/">
+          <img src={Logo} alt="K Khane" />
+        </Link>
         <div className="userLocation">
           <Button>
             <img src={MapIcon} alt="" /> Address:{" "}
             <span>Change Your Location</span>
           </Button>
         </div>
+      </div>
 
+      <div className="navbar__menu">
         <div className="language">
           <img
             src={
@@ -55,7 +56,7 @@ export default function Navbar() {
         </div>
 
         <Button className="user">
-        <img src={UserIcon}/>
+          <img src={UserIcon} />
         </Button>
       </div>
     </div>

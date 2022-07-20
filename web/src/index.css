@@ -17,10 +17,15 @@
   /* color: #fff; */
   font-family: "Edu VIC WA NT Beginner", cursive;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-body{
-  /* position: relative; */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  position: relative;
   min-height: 100vh;
 }

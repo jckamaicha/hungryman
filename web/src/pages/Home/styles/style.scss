@@ -1,4 +1,102 @@
-.home__container{
-    padding: 20px 5vw;
-    position: relative;
+.home__container {
+  padding: 10px 5vw;
+  // position: relative;
+
+  // section => filters
+  .filterUtils {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: .5px solid #0001;
+    padding-bottom: 8px;
+
+    .recentTags {
+      flex: 1;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      overflow-x: scroll;
+
+      .tags {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .MuiButton-root {
+          text-transform: capitalize;
+          background: rgba(116, 185, 255, .15);
+          border-radius: 16px;
+          padding: 3px 8px;
+          color: #000;
+        }
+      }
+    }
+
+    .offersAndNotifications {
+      .MuiButton-root {
+        min-width: 0;
+        line-height: 1.2;
+        color: #000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        i{
+            font-size: 18px;
+        }
+      }
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .MuiButton-root {
+        min-width: 0;
+        line-height: 1.2;
+        color: #000;
+
+        &.filterBtn {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          i{
+            font-size: 18px;
+        }
+        }
+
+        &.active {
+          background: #0a84e3;
+          color: #fff;
+        }
+      }
+
+      .group {
+        background: #0001;
+        border-radius: 10px;
+        padding: 5px;
+      }
+    }
+  }
+
+  // section => recommended foods
+  .recommendedFoods{
+    margin: 20px 3vw;
+
+    .title{
+      font-size: 22px;
+    }
+
+    .foodItems{
+      margin: 20px 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 35px;
+    }
+  }
 }
